@@ -1,0 +1,23 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Registro</h2>
+    <form (ngSubmit)="onRegister()">
+      <input [(ngModel)]="name" name="name" placeholder="Nombre" required>
+      <input [(ngModel)]="email" name="email" type="email" placeholder="Correo" required>
+      <input [(ngModel)]="password" name="password" type="password" placeholder="Contraseña" required>
+
+      <label>Rol:</label>
+      <select [(ngModel)]="desiredRole" name="desiredRole">
+        <option value="user">Usuario</option>
+        <option value="admin">Administrador</option>
+      </select>
+
+      <div *ngIf="desiredRole==='admin'">
+        <input [(ngModel)]="adminCreationPassword" name="adminCreationPassword" type="password" placeholder="Clave de creación de admin">
+      </div>
+
+      <button type="submit">Crear cuenta</button>
+    </form>
+    <p *ngIf="error">{{ error }}</p>
+  </div>
+</div>

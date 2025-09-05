@@ -1,0 +1,143 @@
+# ARCHIVOS DE CONFIGURACIÓN Y SECRETOS
+*.env
+.env*
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+config.json
+database.json
+
+# Claves y certificados
+*.key
+*.pem
+*.cert
+*.crt
+*.p12
+*.pfx
+
+
+# BACKEND - .NET / C#
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.userprefs
+
+# NuGet
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Entity Framework
+*.mdf
+*.ldf
+*.ndf
+
+
+# FRONTEND - Angular / Node.js
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Angular specific
+/dist/
+/tmp/
+/out-tsc/
+/bazel-out/
+
+# Angular CLI
+.angular/
+
+# DB
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+*.accdb
+
+# SQL Server
+*.mdf
+*.ldf
+
+# MySQL
+*.sql.backup
+
+# DOCKER
+# Docker volumes
+docker-volumes/
+.dockerignore
+
+# HERRAMIENTAS DE DESARROLLO
+# IDEs
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+
+# ARCHIVOS DE BACKUP Y TEMPORAL
+*.bak
+*.backup
+*.old
+*.orig
+
+# Archivos sensibles (claves, tokens, contraseñas)
+*.pfx
+*.key
+*.crt
+*.pem
+
+# Cache
+.vscode/
+.angular/
+.fake

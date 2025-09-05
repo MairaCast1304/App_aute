@@ -1,0 +1,15 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Crear Usuario</h2>
+    <form (ngSubmit)="submit()">
+      <input [(ngModel)]="name" name="name" placeholder="Nombre" required>
+      <input [(ngModel)]="email" name="email" placeholder="Correo" required>
+      <input [(ngModel)]="password" type="password" name="password" placeholder="Contraseña" required>
+      <select [(ngModel)]="role" name="role">
+        <option value="user">Usuario</option>
+        <option value="admin">Administrador</option>
+      </select>
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+</div>

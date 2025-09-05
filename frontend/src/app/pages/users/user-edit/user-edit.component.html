@@ -1,0 +1,15 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Editar Usuario</h2>
+    <form *ngIf="user" (ngSubmit)="submit()">
+      <input [(ngModel)]="user.name" name="name" placeholder="Nombre" required>
+      <input [(ngModel)]="user.email" name="email" placeholder="Correo" required>
+      <select [(ngModel)]="user.role" name="role">
+        <option value="user">Usuario</option>
+        <option value="admin">Administrador</option>
+      </select>
+      <input [(ngModel)]="newPassword" type="password" name="password" placeholder="Nueva contraseña (opcional)">
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+</div>

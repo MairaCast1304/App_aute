@@ -1,0 +1,17 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Usuarios</h2>
+    <button (click)="router.navigate(['/users/new'])">Nuevo Usuario</button>
+    <table>
+      <tr><th>Email</th><th>Nombre</th><th>Rol</th><th>Acciones</th></tr>
+      <tr *ngFor="let u of users">
+        <td>{{u.email}}</td><td>{{u.name}}</td><td>{{u.role}}</td>
+        <td>
+          <button (click)="edit(u.id)">Editar</button>
+          <button (click)="del(u.id)">Eliminar</button>
+          <button (click)="unlock(u.id)">Desbloquear</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
