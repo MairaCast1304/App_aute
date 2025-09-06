@@ -57,7 +57,7 @@ public class AuthController : ControllerBase
         }
         catch (Exception ex)
         {
-            return StatusCode(500, "Error interno del servidor");
+            return StatusCode(500, ex.Message);
         }
     }
 }
